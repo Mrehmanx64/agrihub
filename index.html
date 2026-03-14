@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agricultural Information Hub – Empowering Farmers with Knowledge</title>
+  <meta name="description" content="Your online resource center for farming guides, crop information, pest control strategies, and agricultural expert advice." />
+
+  <!-- Bootstrap 5 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ========================================
+     NAVIGATION BAR
+     ======================================== -->
+<nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+  <div class="container">
+
+    <!-- Brand / Logo -->
+    <a class="navbar-brand" href="index.html">
+      <span class="brand-icon"><i class="bi bi-tree"></i></span>
+      Agri<span>Hub</span>
+    </a>
+
+    <!-- Hamburger Toggle -->
+    <button class="navbar-toggler" type="button" id="navbarToggler"
+            data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="toggler-bar"></span>
+      <span class="toggler-bar"></span>
+      <span class="toggler-bar"></span>
+    </button>
+
+    <!-- Nav Links -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav gap-1">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="farming-guides.html">Farming Guides</a></li>
+        <li class="nav-item"><a class="nav-link" href="crop-details.html">Crop Details</a></li>
+        <li class="nav-item"><a class="nav-link" href="pest-control.html">Pest Control</a></li>
+        <li class="nav-item ms-lg-2">
+          <a class="nav-link btn-green px-4" href="contact.html" style="color:white!important">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ========================================
+     HERO SECTION
+     ======================================== -->
+<section class="hero">
+  <div class="hero-bg-image"></div>
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- Left: Text -->
+      <div class="col-lg-6 hero-content">
+        <div class="hero-badge">
+          <i class="bi bi-leaf"></i> Agricultural Information Hub
+        </div>
+        <h1>Empowering Farmers with <span class="highlight">Knowledge</span></h1>
+        <p>A comprehensive online resource platform offering farming guides, detailed crop information, pest control strategies, and direct access to agricultural experts.</p>
+        <div class="d-flex gap-3 flex-wrap">
+          <a href="farming-guides.html" class="btn-primary-green">
+            <i class="bi bi-book"></i> Explore Farming Guides
+          </a>
+          <a href="crop-details.html" class="btn-outline-green">
+            <i class="bi bi-grid"></i> Learn About Crops
+          </a>
+        </div>
+
+        <!-- Stats -->
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <strong>200+</strong>
+            <span>Farming Guides</span>
+          </div>
+          <div class="hero-stat">
+            <strong>50+</strong>
+            <span>Crop Profiles</span>
+          </div>
+          <div class="hero-stat">
+            <strong>30+</strong>
+            <span>Expert Advisors</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Image Card -->
+      <div class="col-lg-6 hero-image-wrap mt-5 mt-lg-0">
+        <div class="hero-image-card position-relative mx-auto" style="max-width:480px">
+          <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800&auto=format&fit=crop" alt="Farming field" />
+          <!-- Floating info cards -->
+          <div class="hero-float-card card-1">
+            <div class="hero-float-icon"><i class="bi bi-patch-check"></i></div>
+            <div>
+              <div class="hero-float-label">Trusted Resource</div>
+              <div class="hero-float-value">Expert-Verified Guides</div>
+            </div>
+          </div>
+          <div class="hero-float-card card-2">
+            <div class="hero-float-icon"><i class="bi bi-bar-chart"></i></div>
+            <div>
+              <div class="hero-float-label">Success Rate</div>
+              <div class="hero-float-value">95% Farmer Satisfaction</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========================================
+     FEATURED SECTIONS (3 Cards)
+     ======================================== -->
+<section class="section-features">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-tag">What We Offer</span>
+      <h2 class="section-title">Your Complete <span class="accent">Farming Resource</span></h2>
+      <p class="section-desc">Explore our comprehensive knowledge base covering every aspect of modern and traditional agriculture.</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Card 1: Farming Guides -->
+      <div class="col-md-4 fade-in delay-1">
+        <div class="feature-card">
+          <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600&auto=format&fit=crop" alt="Farming Guides" class="feature-card-img" />
+          <div class="feature-card-icon"><i class="bi bi-journal-text"></i></div>
+          <div class="feature-card-body">
+            <h3>Farming Guides</h3>
+            <p>Step-by-step tutorials and expert guides covering all major farming techniques — from soil preparation to harvest. Suitable for beginners and experienced farmers alike.</p>
+            <a href="farming-guides.html" class="btn-green">Learn More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Crop Details -->
+      <div class="col-md-4 fade-in delay-2">
+        <div class="feature-card">
+          <img src="https://images.unsplash.com/photo-1543257580-7269da773bf5?w=600&auto=format&fit=crop" alt="Crop Details" class="feature-card-img" />
+          <div class="feature-card-icon"><i class="bi bi-grid-3x3-gap"></i></div>
+          <div class="feature-card-body">
+            <h3>Crop Details</h3>
+            <p>Detailed profiles for grains, fruits, vegetables and cash crops — including soil requirements, cultivation methods, harvest timing and nutritional value.</p>
+            <a href="crop-details.html" class="btn-green">View Crops <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Pest Control -->
+      <div class="col-md-4 fade-in delay-3">
+        <div class="feature-card">
+          <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&auto=format&fit=crop" alt="Pest Control" class="feature-card-img" />
+          <div class="feature-card-icon"><i class="bi bi-shield-check"></i></div>
+          <div class="feature-card-body">
+            <h3>Pest Control Strategies</h3>
+            <p>Effective and eco-friendly pest prevention and management approaches — from biological control methods to organic remedies that keep crops healthy and thriving.</p>
+            <a href="pest-control.html" class="btn-green">Explore Methods <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================
+     WHY THIS HUB SECTION
+     ======================================== -->
+<section class="section-why">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-tag">Why Choose Us</span>
+      <h2 class="section-title">Built for <span class="accent" style="color:#a5d6a7">Farmers, by Experts</span></h2>
+      <p class="section-desc">We combine agricultural science with practical knowledge to give farmers the best resources available.</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Feature 1 -->
+      <div class="col-sm-6 col-lg-3 fade-in delay-1">
+        <div class="why-card">
+          <div class="why-icon"><i class="bi bi-mortarboard"></i></div>
+          <h4>Expert Knowledge</h4>
+          <p>Content verified by agricultural scientists and experienced farming professionals.</p>
+        </div>
+      </div>
+      <!-- Feature 2 -->
+      <div class="col-sm-6 col-lg-3 fade-in delay-2">
+        <div class="why-card">
+          <div class="why-icon"><i class="bi bi-lightbulb"></i></div>
+          <h4>Practical Farming Tips</h4>
+          <p>Real-world advice you can apply immediately on your farm to see results.</p>
+        </div>
+      </div>
+      <!-- Feature 3 -->
+      <div class="col-sm-6 col-lg-3 fade-in delay-3">
+        <div class="why-card">
+          <div class="why-icon"><i class="bi bi-database"></i></div>
+          <h4>Crop Database</h4>
+          <p>Extensive database of crop profiles with cultivation and harvesting data.</p>
+        </div>
+      </div>
+      <!-- Feature 4 -->
+      <div class="col-sm-6 col-lg-3 fade-in delay-4">
+        <div class="why-card">
+          <div class="why-icon"><i class="bi bi-bug"></i></div>
+          <h4>Pest Management</h4>
+          <p>Comprehensive strategies for detecting, preventing, and controlling pests.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================
+     CALL TO ACTION
+     ======================================== -->
+<section class="section-cta">
+  <div class="container">
+    <div class="cta-box fade-in">
+      <h2>Ready to Transform Your Farming?</h2>
+      <p>Explore our comprehensive guides, connect with agricultural experts, and unlock the knowledge you need to grow more sustainably and profitably.</p>
+      <div class="btn-wrap">
+        <a href="farming-guides.html" class="btn-cta-white">
+          <i class="bi bi-book"></i> Browse All Guides
+        </a>
+        <a href="contact.html" class="btn-cta-outline">
+          <i class="bi bi-chat-dots"></i> Contact an Expert
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================
+     FOOTER
+     ======================================== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-5">
+
+      <!-- Brand Column -->
+      <div class="col-lg-4">
+        <div class="footer-brand">
+          <span class="brand-icon"><i class="bi bi-tree"></i></span>
+          Agricultural Information Hub
+        </div>
+        <p class="footer-desc">An online resource center dedicated to empowering farmers with knowledge, practical guides, and expert connections for better agricultural outcomes.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="social-link" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="social-link" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          <a href="#" class="social-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-sm-6 col-lg-2">
+        <p class="footer-heading">Quick Links</p>
+        <ul class="footer-links">
+          <li><a href="index.html"><i class="bi bi-chevron-right"></i> Home</a></li>
+          <li><a href="farming-guides.html"><i class="bi bi-chevron-right"></i> Farming Guides</a></li>
+          <li><a href="crop-details.html"><i class="bi bi-chevron-right"></i> Crop Details</a></li>
+          <li><a href="pest-control.html"><i class="bi bi-chevron-right"></i> Pest Control</a></li>
+          <li><a href="contact.html"><i class="bi bi-chevron-right"></i> Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Resources -->
+      <div class="col-sm-6 col-lg-2">
+        <p class="footer-heading">Resources</p>
+        <ul class="footer-links">
+          <li><a href="#"><i class="bi bi-chevron-right"></i> Soil Health</a></li>
+          <li><a href="#"><i class="bi bi-chevron-right"></i> Irrigation</a></li>
+          <li><a href="#"><i class="bi bi-chevron-right"></i> Organic Farming</a></li>
+          <li><a href="#"><i class="bi bi-chevron-right"></i> Seasonal Calendar</a></li>
+          <li><a href="#"><i class="bi bi-chevron-right"></i> Market Prices</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-lg-4">
+        <p class="footer-heading">Contact Info</p>
+        <div class="footer-contact-item">
+          <span class="footer-contact-icon"><i class="bi bi-geo-alt"></i></span>
+          <span>Agricultural Extension Office, Green Valley, Dhaka 1000, Bangladesh</span>
+        </div>
+        <div class="footer-contact-item">
+          <span class="footer-contact-icon"><i class="bi bi-telephone"></i></span>
+          <span>+880 1700-000000</span>
+        </div>
+        <div class="footer-contact-item">
+          <span class="footer-contact-icon"><i class="bi bi-envelope"></i></span>
+          <span>info@agrihub.org</span>
+        </div>
+        <div class="footer-contact-item">
+          <span class="footer-contact-icon"><i class="bi bi-clock"></i></span>
+          <span>Mon – Fri, 9:00 AM – 5:00 PM</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p class="mb-0">&copy; 2024 Agricultural Information Hub. All rights reserved. Designed for Farmers.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Scroll To Top Button -->
+<button id="scrollTop" aria-label="Scroll to top"><i class="bi bi-arrow-up"></i></button>
+
+<!-- Bootstrap 5 JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<!-- Custom JS -->
+<script src="js/script.js"></script>
+</body>
+</html>

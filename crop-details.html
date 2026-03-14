@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crop Details – Agricultural Information Hub</title>
+  <meta name="description" content="Detailed crop information including soil requirements, cultivation methods, harvesting time, and nutritional value." />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <span class="brand-icon"><i class="bi bi-tree"></i></span>
+      Agri<span>Hub</span>
+    </a>
+    <button class="navbar-toggler" type="button" id="navbarToggler"
+            data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="toggler-bar"></span><span class="toggler-bar"></span><span class="toggler-bar"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav gap-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="farming-guides.html">Farming Guides</a></li>
+        <li class="nav-item"><a class="nav-link active" href="crop-details.html">Crop Details</a></li>
+        <li class="nav-item"><a class="nav-link" href="pest-control.html">Pest Control</a></li>
+        <li class="nav-item ms-lg-2">
+          <a class="nav-link btn-green px-4" href="contact.html" style="color:white!important">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb-nav">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <span class="current">Crop Details</span>
+    </div>
+    <h1>Crop Details</h1>
+    <p>Explore detailed profiles for major crops — grains, fruits, vegetables, and cash crops with cultivation and nutritional data.</p>
+  </div>
+</section>
+
+<!-- CROP DETAILS SECTION -->
+<section class="section-crops">
+  <div class="container">
+
+    <!-- Category Tabs -->
+    <ul class="nav nav-pills crop-category-tabs flex-wrap gap-2 mb-5 fade-in" id="cropTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="grains-tab" data-bs-toggle="tab" data-bs-target="#grains" type="button" role="tab">
+          <i class="bi bi-grid-3x3"></i> Grains
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="fruits-tab" data-bs-toggle="tab" data-bs-target="#fruits" type="button" role="tab">
+          <i class="bi bi-apple"></i> Fruits
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="vegetables-tab" data-bs-toggle="tab" data-bs-target="#vegetables" type="button" role="tab">
+          <i class="bi bi-flower1"></i> Vegetables
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="cash-tab" data-bs-toggle="tab" data-bs-target="#cash" type="button" role="tab">
+          <i class="bi bi-currency-dollar"></i> Cash Crops
+        </button>
+      </li>
+    </ul>
+
+    <!-- Tab Panes -->
+    <div class="tab-content" id="cropTabContent">
+
+      <!-- ====== GRAINS ====== -->
+      <div class="tab-pane fade show active" id="grains" role="tabpanel">
+        <div class="section-header text-start mb-4">
+          <span class="section-tag">Category</span>
+          <h2 class="section-title">Grain Crops</h2>
+        </div>
+        <div class="row g-4">
+
+          <!-- Rice -->
+          <div class="col-md-6 col-lg-4 fade-in">
+            <div class="crop-card">
+              <img src="https://images.unsplash.com/photo-1536304929831-ee1ca9d44906?w=500&auto=format&fit=crop" alt="Rice" class="crop-card-img" />
+              <div class="crop-card-body">
+                <h4><i class="bi bi-star-fill text-warning me-2" style="font-size:0.8rem"></i>Rice (Oryza sativa)</h4>
+                <div class="crop-info-grid">
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Soil Type</span>
+                    <span class="crop-info-value">Clay / Loamy</span>
+                  </div>
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Soil pH</span>
+                    <span class="crop-info-value">5.5 – 6.5</span>
+                  </div>
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Cultivation</span>
+                    <span class="crop-info-value">Transplanting / Direct Seeding</span>
+                  </div>
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Harvest Time</span>
+                    <span class="crop-info-value">110–150 days</span>
+                  </div>
+                </div>
+                <p class="crop-uses"><strong>Nutrition:</strong> Rich in carbohydrates, B vitamins, manganese, and iron.</p>
+                <p class="crop-uses"><strong>Uses:</strong> Staple food, rice flour, animal feed, brewing, and biofuel production.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Wheat -->
+          <div class="col-md-6 col-lg-4 fade-in delay-1">
+            <div class="crop-card">
+              <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=500&auto=format&fit=crop" alt="Wheat" class="crop-card-img" />
+              <div class="crop-card-body">
+                <h4><i class="bi bi-star-fill text-warning me-2" style="font-size:0.8rem"></i>Wheat (Triticum aestivum)</h4>
+                <div class="crop-info-grid">
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Soil Type</span>
+                    <span class="crop-info-value">Loamy / Sandy Loam</span>
+                  </div>
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Soil pH</span>
+                    <span class="crop-info-value">6.0 – 7.0</span>
+                  </div>
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Cultivation</span>
+                    <span class="crop-info-value">Direct Seeding (Rabi)</span>
+                  </div>
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Harvest Time</span>
+                    <span class="crop-info-value">100–120 days</span>
+                  </div>
+                </div>
+                <p class="crop-uses"><strong>Nutrition:</strong> High in protein, fiber, iron, zinc, and B-complex vitamins.</p>
+                <p class="crop-uses"><strong>Uses:</strong> Flour for bread, pasta, cereals, animal feed, and starch production.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Corn -->
+          <div class="col-md-6 col-lg-4 fade-in delay-2">
+            <div class="crop-card">
+              <img src="https://images.unsplash.com/photo-1551754655-cd27e38d2076?w=500&auto=format&fit=crop" alt="Corn" class="crop-card-img" />
+              <div class="crop-card-body">
+                <h4><i class="bi bi-star-fill text-warning me-2" style="font-size:0.8rem"></i>Corn (Zea mays)</h4>
+                <div class="crop-info-grid">
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Soil Type</span>
+                    <span class="crop-info-value">Well-drained Loam</span>
+                  </div>
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Soil pH</span>
+                    <span class="crop-info-value">5.8 – 7.0</span>
+                  </div>
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Cultivation</span>
+                    <span class="crop-info-value">Direct Sowing</span>
+                  </div>
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Harvest Time</span>
+                    <span class="crop-info-value">65–105 days</span>
+                  </div>
+                </div>
+                <p class="crop-uses"><strong>Nutrition:</strong> Good source of fiber, vitamins A & B, magnesium, and antioxidants.</p>
+                <p class="crop-uses"><strong>Uses:</strong> Direct consumption, corn oil, popcorn, starch, feed, and biofuel.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div><!-- end grains tab -->
+
+      <!-- ====== FRUITS ====== -->
+      <div class="tab-pane fade" id="fruits" role="tabpanel">
+        <div class="section-header text-start mb-4">
+          <span class="section-tag">Category</span>
+          <h2 class="section-title">Fruit Crops</h2>
+        </div>
+        <div class="row g-4">
+
+          <!-- Mango -->
+          <div class="col-md-6 col-lg-4 fade-in">
+            <div class="crop-card">
+              <img src="https://images.unsplash.com/photo-1553279768-865429fa0078?w=500&auto=format&fit=crop" alt="Mango" class="crop-card-img" />
+              <div class="crop-card-body">
+                <h4><i class="bi bi-star-fill text-warning me-2" style="font-size:0.8rem"></i>Mango (Mangifera indica)</h4>
+                <div class="crop-info-grid">
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Soil Type</span>
+                    <span class="crop-info-value">Deep Alluvial / Loam</span>
+                  </div>
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Soil pH</span>
+                    <span class="crop-info-value">5.5 – 7.5</span>
+                  </div>
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Cultivation</span>
+                    <span class="crop-info-value">Grafting / Budding</span>
+                  </div>
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Harvest Time</span>
+                    <span class="crop-info-value">May – August</span>
+                  </div>
+                </div>
+                <p class="crop-uses"><strong>Nutrition:</strong> Excellent source of Vitamin C, A, folate, and potassium.</p>
+                <p class="crop-uses"><strong>Uses:</strong> Fresh fruit, juices, pickles, chutneys, dried snacks, and jams.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Banana -->
+          <div class="col-md-6 col-lg-4 fade-in delay-1">
+            <div class="crop-card">
+              <img src="https://images.unsplash.com/photo-1603833665858-e61d17a86224?w=500&auto=format&fit=crop" alt="Banana" class="crop-card-img" />
+              <div class="crop-card-body">
+                <h4><i class="bi bi-star-fill text-warning me-2" style="font-size:0.8rem"></i>Banana (Musa sp.)</h4>
+                <div class="crop-info-grid">
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Soil Type</span>
+                    <span class="crop-info-value">Rich Loamy</span>
+                  </div>
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Soil pH</span>
+                    <span class="crop-info-value">6.0 – 7.0</span>
+                  </div>
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Cultivation</span>
+                    <span class="crop-info-value">Sucker / Tissue Culture</span>
+                  </div>
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Harvest Time</span>
+                    <span class="crop-info-value">9–12 months</span>
+                  </div>
+                </div>
+                <p class="crop-uses"><strong>Nutrition:</strong> Rich in potassium, Vitamin B6, magnesium, and natural sugars.</p>
+                <p class="crop-uses"><strong>Uses:</strong> Fresh fruit, banana chips, smoothies, baking, and medicinal use.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Papaya -->
+          <div class="col-md-6 col-lg-4 fade-in delay-2">
+            <div class="crop-card">
+              <img src="https://images.unsplash.com/photo-1526318441522-8cf6a4e0f9f7?w=500&auto=format&fit=crop" alt="Papaya" class="crop-card-img" />
+              <div class="crop-card-body">
+                <h4><i class="bi bi-star-fill text-warning me-2" style="font-size:0.8rem"></i>Papaya (Carica papaya)</h4>
+                <div class="crop-info-grid">
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Soil Type</span>
+                    <span class="crop-info-value">Sandy Loam</span>
+                  </div>
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Soil pH</span>
+                    <span class="crop-info-value">6.0 – 6.5</span>
+                  </div>
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Cultivation</span>
+                    <span class="crop-info-value">Seedling Transplanting</span>
+                  </div>
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Harvest Time</span>
+                    <span class="crop-info-value">10–12 months</span>
+                  </div>
+                </div>
+                <p class="crop-uses"><strong>Nutrition:</strong> High in Vitamin C, folate, Vitamin A, and digestive enzyme papain.</p>
+                <p class="crop-uses"><strong>Uses:</strong> Fresh fruit, juices, medicinal extract (papain), green papaya salad.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div><!-- end fruits tab -->
+
+      <!-- ====== VEGETABLES ====== -->
+      <div class="tab-pane fade" id="vegetables" role="tabpanel">
+        <div class="section-header text-start mb-4">
+          <span class="section-tag">Category</span>
+          <h2 class="section-title">Vegetable Crops</h2>
+        </div>
+        <div class="row g-4">
+
+          <!-- Tomato -->
+          <div class="col-md-6 col-lg-4 fade-in">
+            <div class="crop-card">
+              <img src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=500&auto=format&fit=crop" alt="Tomato" class="crop-card-img" />
+              <div class="crop-card-body">
+                <h4><i class="bi bi-star-fill text-warning me-2" style="font-size:0.8rem"></i>Tomato (Solanum lycopersicum)</h4>
+                <div class="crop-info-grid">
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Soil Type</span>
+                    <span class="crop-info-value">Loamy / Sandy Loam</span>
+                  </div>
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Soil pH</span>
+                    <span class="crop-info-value">6.0 – 6.8</span>
+                  </div>
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Cultivation</span>
+                    <span class="crop-info-value">Nursery Transplanting</span>
+                  </div>
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Harvest Time</span>
+                    <span class="crop-info-value">60–80 days</span>
+                  </div>
+                </div>
+                <p class="crop-uses"><strong>Nutrition:</strong> Rich in lycopene, Vitamins C and K, potassium, and folate.</p>
+                <p class="crop-uses"><strong>Uses:</strong> Salads, sauces, ketchup, canning, juices, and culinary dishes.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Potato -->
+          <div class="col-md-6 col-lg-4 fade-in delay-1">
+            <div class="crop-card">
+              <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=500&auto=format&fit=crop" alt="Potato" class="crop-card-img" />
+              <div class="crop-card-body">
+                <h4><i class="bi bi-star-fill text-warning me-2" style="font-size:0.8rem"></i>Potato (Solanum tuberosum)</h4>
+                <div class="crop-info-grid">
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Soil Type</span>
+                    <span class="crop-info-value">Sandy Loam / Silt Loam</span>
+                  </div>
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Soil pH</span>
+                    <span class="crop-info-value">5.0 – 6.0</span>
+                  </div>
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Cultivation</span>
+                    <span class="crop-info-value">Tuber / Seed Potato</span>
+                  </div>
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Harvest Time</span>
+                    <span class="crop-info-value">70–120 days</span>
+                  </div>
+                </div>
+                <p class="crop-uses"><strong>Nutrition:</strong> Good source of carbohydrates, Vitamin C, B6, potassium, and fiber.</p>
+                <p class="crop-uses"><strong>Uses:</strong> Cooking, chips, flour, starch, alcohol production, and animal feed.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cabbage -->
+          <div class="col-md-6 col-lg-4 fade-in delay-2">
+            <div class="crop-card">
+              <img src="https://images.unsplash.com/photo-1594282486552-05b4d80fbb9f?w=500&auto=format&fit=crop" alt="Cabbage" class="crop-card-img" />
+              <div class="crop-card-body">
+                <h4><i class="bi bi-star-fill text-warning me-2" style="font-size:0.8rem"></i>Cabbage (Brassica oleracea)</h4>
+                <div class="crop-info-grid">
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Soil Type</span>
+                    <span class="crop-info-value">Well-drained Loam</span>
+                  </div>
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Soil pH</span>
+                    <span class="crop-info-value">6.0 – 7.0</span>
+                  </div>
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Cultivation</span>
+                    <span class="crop-info-value">Transplanting</span>
+                  </div>
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Harvest Time</span>
+                    <span class="crop-info-value">80–100 days</span>
+                  </div>
+                </div>
+                <p class="crop-uses"><strong>Nutrition:</strong> High in Vitamin K, C, folate, fiber, and glucosinolates.</p>
+                <p class="crop-uses"><strong>Uses:</strong> Coleslaw, sauerkraut, stir-fry, soups, pickling, and fermentation.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div><!-- end vegetables tab -->
+
+      <!-- ====== CASH CROPS ====== -->
+      <div class="tab-pane fade" id="cash" role="tabpanel">
+        <div class="section-header text-start mb-4">
+          <span class="section-tag">Category</span>
+          <h2 class="section-title">Cash Crops</h2>
+        </div>
+        <div class="row g-4">
+
+          <!-- Tea -->
+          <div class="col-md-6 col-lg-4 fade-in">
+            <div class="crop-card">
+              <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=500&auto=format&fit=crop" alt="Tea" class="crop-card-img" />
+              <div class="crop-card-body">
+                <h4><i class="bi bi-star-fill text-warning me-2" style="font-size:0.8rem"></i>Tea (Camellia sinensis)</h4>
+                <div class="crop-info-grid">
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Soil Type</span>
+                    <span class="crop-info-value">Deep Acidic Loam</span>
+                  </div>
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Soil pH</span>
+                    <span class="crop-info-value">4.5 – 5.5</span>
+                  </div>
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Cultivation</span>
+                    <span class="crop-info-value">Vegetative Propagation</span>
+                  </div>
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Harvest Time</span>
+                    <span class="crop-info-value">Perennial / 3–5 yr maturity</span>
+                  </div>
+                </div>
+                <p class="crop-uses"><strong>Nutrition:</strong> Contains antioxidants (catechins), caffeine, L-theanine, and polyphenols.</p>
+                <p class="crop-uses"><strong>Uses:</strong> Green tea, black tea, white tea, oolong, medicinal extracts, and cosmetics.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cotton -->
+          <div class="col-md-6 col-lg-4 fade-in delay-1">
+            <div class="crop-card">
+              <img src="https://images.unsplash.com/photo-1573489748892-aacc5d4e0898?w=500&auto=format&fit=crop" alt="Cotton" class="crop-card-img" />
+              <div class="crop-card-body">
+                <h4><i class="bi bi-star-fill text-warning me-2" style="font-size:0.8rem"></i>Cotton (Gossypium sp.)</h4>
+                <div class="crop-info-grid">
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Soil Type</span>
+                    <span class="crop-info-value">Black Cotton / Deep Loam</span>
+                  </div>
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Soil pH</span>
+                    <span class="crop-info-value">5.8 – 8.0</span>
+                  </div>
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Cultivation</span>
+                    <span class="crop-info-value">Direct Seeding</span>
+                  </div>
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Harvest Time</span>
+                    <span class="crop-info-value">150–180 days</span>
+                  </div>
+                </div>
+                <p class="crop-uses"><strong>Nutrition:</strong> Cottonseed oil is rich in Vitamin E and polyunsaturated fats.</p>
+                <p class="crop-uses"><strong>Uses:</strong> Textile fiber, cottonseed oil, animal feed, medical bandages, and paper.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sugarcane -->
+          <div class="col-md-6 col-lg-4 fade-in delay-2">
+            <div class="crop-card">
+              <img src="https://images.unsplash.com/photo-1599228397003-00caf0e81d10?w=500&auto=format&fit=crop" alt="Sugarcane" class="crop-card-img" />
+              <div class="crop-card-body">
+                <h4><i class="bi bi-star-fill text-warning me-2" style="font-size:0.8rem"></i>Sugarcane (Saccharum officinarum)</h4>
+                <div class="crop-info-grid">
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Soil Type</span>
+                    <span class="crop-info-value">Deep Loamy / Alluvial</span>
+                  </div>
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Soil pH</span>
+                    <span class="crop-info-value">6.0 – 7.5</span>
+                  </div>
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Cultivation</span>
+                    <span class="crop-info-value">Stem Cuttings (Sett)</span>
+                  </div>
+                  <div class="crop-info-item">
+                    <span class="crop-info-label">Harvest Time</span>
+                    <span class="crop-info-value">12–18 months</span>
+                  </div>
+                </div>
+                <p class="crop-uses"><strong>Nutrition:</strong> Natural source of sucrose, iron, calcium, and B vitamins.</p>
+                <p class="crop-uses"><strong>Uses:</strong> Sugar production, molasses, ethanol/biofuel, rum, and animal feed.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div><!-- end cash crops tab -->
+
+    </div><!-- end tab-content -->
+  </div><!-- end container -->
+</section>
+
+<!-- CTA -->
+<section class="section-cta">
+  <div class="container">
+    <div class="cta-box fade-in">
+      <h2>Looking for Farming Advice?</h2>
+      <p>Our agricultural experts are ready to help you with specific crop questions and farming challenges.</p>
+      <div class="btn-wrap">
+        <a href="contact.html" class="btn-cta-white"><i class="bi bi-chat-dots"></i> Ask an Expert</a>
+        <a href="pest-control.html" class="btn-cta-outline"><i class="bi bi-shield-check"></i> Pest Control Tips</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <div class="footer-brand">
+          <span class="brand-icon"><i class="bi bi-tree"></i></span>
+          Agricultural Information Hub
+        </div>
+        <p class="footer-desc">Empowering farmers with knowledge, practical guides, and expert connections.</p>
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="social-link"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
+          <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-2">
+        <p class="footer-heading">Quick Links</p>
+        <ul class="footer-links">
+          <li><a href="index.html"><i class="bi bi-chevron-right"></i> Home</a></li>
+          <li><a href="farming-guides.html"><i class="bi bi-chevron-right"></i> Farming Guides</a></li>
+          <li><a href="crop-details.html"><i class="bi bi-chevron-right"></i> Crop Details</a></li>
+          <li><a href="pest-control.html"><i class="bi bi-chevron-right"></i> Pest Control</a></li>
+          <li><a href="contact.html"><i class="bi bi-chevron-right"></i> Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-lg-2">
+        <p class="footer-heading">Crop Categories</p>
+        <ul class="footer-links">
+          <li><a href="#grains-tab"><i class="bi bi-chevron-right"></i> Grains</a></li>
+          <li><a href="#fruits-tab"><i class="bi bi-chevron-right"></i> Fruits</a></li>
+          <li><a href="#vegetables-tab"><i class="bi bi-chevron-right"></i> Vegetables</a></li>
+          <li><a href="#cash-tab"><i class="bi bi-chevron-right"></i> Cash Crops</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <p class="footer-heading">Contact Info</p>
+        <div class="footer-contact-item">
+          <span class="footer-contact-icon"><i class="bi bi-geo-alt"></i></span>
+          <span>Agricultural Extension Office, Green Valley, Dhaka 1000, Bangladesh</span>
+        </div>
+        <div class="footer-contact-item">
+          <span class="footer-contact-icon"><i class="bi bi-telephone"></i></span>
+          <span>+880 1700-000000</span>
+        </div>
+        <div class="footer-contact-item">
+          <span class="footer-contact-icon"><i class="bi bi-envelope"></i></span>
+          <span>info@agrihub.org</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p class="mb-0">&copy; 2024 Agricultural Information Hub. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<button id="scrollTop" aria-label="Scroll to top"><i class="bi bi-arrow-up"></i></button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
